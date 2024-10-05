@@ -43,7 +43,7 @@ class _ResetPageState extends State<ResetPage> {
                       color: Colors.black,
                       fontWeight: FontWeight.w900,
                       fontSize: 53,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                 ),
@@ -70,7 +70,7 @@ class _ResetPageState extends State<ResetPage> {
                       decoration: InputDecoration(
                         hintText: 'Example@email.com',
                         hintStyle: const TextStyle(
-                            color: Colors.black54, fontFamily: 'Poppins'),
+                            color: Colors.black54, fontFamily: 'Montserrat'),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10.0),
                         ),
@@ -97,7 +97,7 @@ class _ResetPageState extends State<ResetPage> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -118,16 +118,16 @@ class _ResetPageState extends State<ResetPage> {
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          backgroundColor: Colors.red, // Set background color to red
+          backgroundColor: Colors.green,
           content: Center(
             child: Text(
               '$e', // Convert the error to a string to display
-              textAlign: TextAlign.center, // Center the text horizontally
+              textAlign: TextAlign.center,
               style: const TextStyle(
-                fontFamily: 'Poppins', // Use the Poppins font
-                fontSize: 18, // Set the font size to 18
-                fontWeight: FontWeight.bold, // Set the font weight to bold
-                color: Colors.white, // Set text color to white
+                fontFamily: 'Montserrat',
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ),

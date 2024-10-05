@@ -24,7 +24,7 @@ class HomePageScreen extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         brightness: Brightness.light,
-        fontFamily: 'Poppins',
+        fontFamily: 'Montserrat',
       ),
       home: Scaffold(
         appBar: AppBar(
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.black,
                   fontWeight: FontWeight.w900,
                   fontSize: 50,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Montserrat',
                 ),
               ),
             ),
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                       ),
                       textAlign: TextAlign.center,
                     ),

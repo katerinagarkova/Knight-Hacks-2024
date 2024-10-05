@@ -82,12 +82,12 @@ class _LoginPageState extends State<LoginPage> {
           content: Center(
             child: Text(
               '$e', // Convert the error to a string to display
-              textAlign: TextAlign.center, // Center the text horizontally
+              textAlign: TextAlign.center,
               style: const TextStyle(
-                fontFamily: 'Poppins', // Use the Poppins font
-                fontSize: 18, // Set the font size to 18
-                fontWeight: FontWeight.bold, // Set the font weight to bold
-                color: Colors.white, // Set text color to white
+                fontFamily: 'Montserrat',
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ),
@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                   color: Colors.black,
                   fontWeight: FontWeight.w900,
                   fontSize: 60,
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Montserrat',
                 ),
               ),
               const SizedBox(height: 25.0),
@@ -140,7 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: InputDecoration(
                           hintText: 'Example@email.com',
                           hintStyle: const TextStyle(
-                              color: Colors.black54, fontFamily: 'Poppins'),
+                              color: Colors.black54, fontFamily: 'Montserrat'),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -173,7 +173,7 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: InputDecoration(
                           hintText: 'Enter your password',
                           hintStyle: const TextStyle(
-                              color: Colors.black54, fontFamily: 'Poppins'),
+                              color: Colors.black54, fontFamily: 'Montserrat'),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -217,7 +217,7 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
-                          fontFamily: 'Poppins'),
+                          fontFamily: 'Montserrat'),
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -235,7 +235,7 @@ class _LoginPageState extends State<LoginPage> {
                   'Need an account? Sign up',
                   style: TextStyle(
                     color: Colors.blue,
-                    fontFamily: 'Poppins',
+                    fontFamily: 'Montserrat',
                     fontSize: 18,
                   ),
                 ),

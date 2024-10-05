@@ -27,12 +27,12 @@ class _VerificationPageState extends State<VerificationPage> {
           content: Center(
             child: Text(
               '$e', // Convert the error to a string to display
-              textAlign: TextAlign.center, // Center the text horizontally
+              textAlign: TextAlign.center,
               style: const TextStyle(
-                fontFamily: 'Poppins', // Use the Poppins font
-                fontSize: 18, // Set the font size to 18
-                fontWeight: FontWeight.bold, // Set the font weight to bold
-                color: Colors.white, // Set text color to white
+                fontFamily: 'Montserrat',
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
           ),
@@ -71,7 +71,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     color: Colors.black,
                     fontWeight: FontWeight.w900,
                     fontSize: 53,
-                    fontFamily: 'Poppins',
+                    fontFamily: 'Montserrat',
                   ),
                 ),
               ), // Added Align
@@ -104,7 +104,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                     ),
                     textAlign: TextAlign.center,
                   ),

@@ -53,7 +53,7 @@ class _RegisterState extends State<Register> {
                       color: Colors.black,
                       fontWeight: FontWeight.w900,
                       fontSize: 60,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                 ),
@@ -65,7 +65,7 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                     ),
                   ),
                 ),
@@ -77,7 +77,7 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -91,7 +91,7 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -105,7 +105,7 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _RegisterState extends State<Register> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
-                      fontFamily: 'Poppins',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -146,7 +146,7 @@ class _RegisterState extends State<Register> {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 18,
-                        fontFamily: 'Poppins',
+                        fontFamily: 'Montserrat',
                       ),
                     ),
                     Expanded(
@@ -207,7 +207,7 @@ class _PasswordInputState extends State<PasswordInput> {
               ),
               hintText: 'At least 8 characters',
               hintStyle:
-                  const TextStyle(color: Colors.black54, fontFamily: 'Poppins'),
+                  const TextStyle(color: Colors.black54, fontFamily: 'Montserrat'),
               contentPadding: const EdgeInsets.fromLTRB(
                   12.0, 8.0, 12.0, 8.0), // Add left padding here
             ),
@@ -274,7 +274,7 @@ class _EmailInputState extends State<EmailInput> {
               ),
               hintText: 'Example@email.com',
               hintStyle:
-                  const TextStyle(color: Colors.black54, fontFamily: 'Poppins'),
+                  const TextStyle(color: Colors.black54, fontFamily: 'Montserrat'),
               contentPadding: const EdgeInsets.fromLTRB(
                   12.0, 8.0, 12.0, 8.0), // Add left padding here
               errorText: _emailError,
@@ -359,7 +359,7 @@ class _FirstNameInputState extends State<FirstNameInput> {
               ),
               hintText: 'John',
               hintStyle:
-                  const TextStyle(color: Colors.black54, fontFamily: 'Poppins'),
+                  const TextStyle(color: Colors.black54, fontFamily: 'Montserrat'),
               contentPadding: const EdgeInsets.fromLTRB(
                   12.0, 8.0, 12.0, 8.0), // Add left padding here
               errorText: _firstNameError,
@@ -434,7 +434,7 @@ class _LastNameInputState extends State<LastNameInput> {
               ),
               hintText: 'Doe',
               hintStyle:
-                  const TextStyle(color: Colors.black54, fontFamily: 'Poppins'),
+                  const TextStyle(color: Colors.black54, fontFamily: 'Montserrat'),
               contentPadding: const EdgeInsets.fromLTRB(
                   12.0, 8.0, 12.0, 8.0), // Add left padding here
               errorText: _lastNameError,
@@ -487,7 +487,7 @@ class SignIn extends StatelessWidget {
         'Sign into LockedIn',
         style: TextStyle(
           color: Colors.blue,
-          fontFamily: 'Poppins',
+          fontFamily: 'Montserrat',
           fontSize: 18,
         ),
       ),
@@ -520,10 +520,10 @@ class RegisterButton extends StatelessWidget {
                   check,
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontFamily: 'Poppins', // Use the Poppins font
-                    fontSize: 18, // Set the font size to 18
-                    fontWeight: FontWeight.bold, // Set the font weight to bold
-                    color: Colors.white, // Set text color to white
+                    fontFamily: 'Montserrat',
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -541,7 +541,7 @@ class RegisterButton extends StatelessWidget {
         child: Text(
           'Register',
           style: TextStyle(
-              color: Colors.white, fontSize: 18, fontFamily: 'Poppins'),
+              color: Colors.white, fontSize: 18, fontFamily: 'Montserrat'),
           textAlign: TextAlign.center, // Align text in the center horizontally
         ),
       ),
