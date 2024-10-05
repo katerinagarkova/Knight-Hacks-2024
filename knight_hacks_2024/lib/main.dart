@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:lib/screens/homepage.dart';
+
+import 'register.dart';
+import 'reset.dart';
+import 'token.dart';
+import 'verification.dart';
 
 void main() {
   runApp(const MyApp());
