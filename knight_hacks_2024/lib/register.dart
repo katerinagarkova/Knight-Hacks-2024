@@ -48,7 +48,7 @@ class _RegisterState extends State<Register> {
                 const Align(
                   alignment: Alignment.center,
                   child: Text(
-                    'LockedIn',
+                    'Bloom Buddy',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.w900,
@@ -61,7 +61,7 @@ class _RegisterState extends State<Register> {
                 const Align(
                   alignment: Alignment.center,
                   child: Text(
-                    'Get ready to Lock In!',
+                    'Care for your plants',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 18,
@@ -484,9 +484,9 @@ class SignIn extends StatelessWidget {
         );
       },
       child: const Text(
-        'Sign into LockedIn',
+        'Sign into Bloom Buddy',
         style: TextStyle(
-          color: Colors.blue,
+          color: Colors.green,
           fontFamily: 'Montserrat',
           fontSize: 18,
         ),
@@ -514,7 +514,7 @@ class RegisterButton extends StatelessWidget {
           // Display error message to the user
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              backgroundColor: Colors.red, // Set background color to red
+              backgroundColor: Colors.green,
               content: Center(
                 child: Text(
                   check,
