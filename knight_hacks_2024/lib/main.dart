@@ -103,144 +103,153 @@ class _LoginPageState extends State<LoginPage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Bloom Buddy',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 60,
-                  fontFamily: 'Montserrat',
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color.fromRGBO(34, 34, 39, 1.0), Color.fromRGBO(93, 122, 173, 1.0)],
+            // stops: [0.4, 0.6],
+            begin:Alignment.topCenter,
+            end: Alignment.bottomCenter, 
+            ),
+        ),
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Bloom Buddy',
+                  style: TextStyle(
+                  color: Color.fromRGBO(75, 95, 121, 1.0),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 55,
+                    fontFamily: 'Montserrat',
+                  ),
                 ),
-              ),
-              const SizedBox(height: 25.0),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Email',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                Image.asset(
+                  'imgs/bloombuddylogotrans.png',
+                  width: 400,
+                  height: 400,
+                ),
+                const Text(
+                  'Welcome!',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 30,
+                    fontFamily: 'Montserrat',
                   ),
-                  SizedBox(
-                    width: 350, // Set width of the container
-                    child: Container(
-                      color: Colors.grey[200],
-                      child: TextFormField(
-                        onChanged: _handleEmailChange,
-                        obscureText: false,
-                        decoration: InputDecoration(
-                          hintText: 'Example@email.com',
-                          hintStyle: const TextStyle(
-                              color: Colors.black54, fontFamily: 'Montserrat'),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
+                ),
+                const SizedBox(height: 25.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 350, // Set width of the container
+                      child: Container(
+                        color: Colors.grey[200],
+                        child: TextFormField(
+                          onChanged: _handleEmailChange,
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            hintText: 'Example@email.com',
+                            hintStyle: const TextStyle(
+                                color: Colors.black54, fontFamily: 'Montserrat'),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            contentPadding:
+                                const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
                           ),
-                          contentPadding:
-                              const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 25.0),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Password',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 350, // Set width of the container
-                    child: Container(
-                      color: Colors.grey[200],
-                      child: TextFormField(
-                        onChanged: _handlePasswordChange,
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          hintText: 'Enter your password',
-                          hintStyle: const TextStyle(
-                              color: Colors.black54, fontFamily: 'Montserrat'),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
+                  ],
+                ),
+                const SizedBox(height: 25.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 350, // Set width of the container
+                      child: Container(
+                        color: Colors.grey[200],
+                        child: TextFormField(
+                          onChanged: _handlePasswordChange,
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            hintText: 'Enter your password',
+                            hintStyle: const TextStyle(
+                                color: Colors.black54, fontFamily: 'Montserrat'),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            contentPadding:
+                                const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
                           ),
-                          contentPadding:
-                              const EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
                         ),
                       ),
                     ),
+                  ],
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ResetPage()),
+                      );
+                    },
+                    child: const Text(
+                      'Forgot password?',
+                      style: TextStyle(color: Colors.blue, fontSize: 17),
+                    ),
                   ),
-                ],
-              ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextButton(
+                ),
+                const SizedBox(height: 20.0),
+                Builder(
+                  builder: (context) => MaterialButton(
+                    onPressed: () => _handleSubmit(context),
+                    color: const Color(0xFF14532d).withBlue(255),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 13.0),
+                    child: const SizedBox(
+                      width: 350,
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontFamily: 'Montserrat'),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20.0),
+                TextButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const ResetPage()),
+                      MaterialPageRoute(builder: (context) => const Register()),
                     );
                   },
                   child: const Text(
-                    'Forgot password?',
-                    style: TextStyle(color: Colors.blue, fontSize: 17),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 20.0),
-              Builder(
-                builder: (context) => MaterialButton(
-                  onPressed: () => _handleSubmit(context),
-                  color: const Color(0xFF14532d).withBlue(255),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  padding: const EdgeInsets.symmetric(vertical: 13.0),
-                  child: const SizedBox(
-                    width: 350,
-                    child: Text(
-                      'Login',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontFamily: 'Montserrat'),
-                      textAlign: TextAlign.center,
+                    'Need an account? Sign up',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontFamily: 'Montserrat',
+                      fontSize: 18,
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 20.0),
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Register()),
-                  );
-                },
-                child: const Text(
-                  'Need an account? Sign up',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontFamily: 'Montserrat',
-                    fontSize: 18,
-                  ),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
