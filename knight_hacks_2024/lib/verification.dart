@@ -66,7 +66,7 @@ class _VerificationPageState extends State<VerificationPage> {
               Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'LockedIn',
+                  'BloomBuddy',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w900,

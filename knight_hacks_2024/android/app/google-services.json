@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "54930089747",
+    "project_id": "knight-hacks-2024",
+    "storage_bucket": "knight-hacks-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54930089747:android:6714de58e32e4f5ed85ce6",
+        "android_client_info": {
+          "package_name": "com.example.knight_hacks_2024"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAskaEulfElVms4k8hV2X7jYYu5svl3An8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

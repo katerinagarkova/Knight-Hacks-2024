@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'register.dart';
@@ -6,7 +7,11 @@ import 'token.dart';
 import 'verification.dart';
 import 'homepage.dart';
 
-void main() {
+main() async{
+  WidgetsFlutterBinding.ensureInitialized;
+
+  await Firebase.initializeApp();
+
   runApp(
     const MaterialApp(
       home: HomePageScreen(),
