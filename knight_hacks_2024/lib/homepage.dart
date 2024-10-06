@@ -2,15 +2,17 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 //import 'package:lib/token.dart';
+import 'package:knight_hacks_2024/navbar.dart';
 
 import 'main.dart';
+import 'navbar.dart';
 import 'token.dart';
 
 List<dynamic> userPlants = [];
 
-class HomePageState extends ChangeNotifier {
+/*class HomePageState extends State<MaterialApp> {
   
-}
+}*/
 
 class HomePageScreen extends StatelessWidget {
   const HomePageScreen({super.key});
@@ -19,7 +21,7 @@ class HomePageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Bloom Buddy',
+      title: 'Plant Name',
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
@@ -27,12 +29,15 @@ class HomePageScreen extends StatelessWidget {
         fontFamily: 'Montserrat',
       ),
       home: Scaffold(
+        drawer: NavBar(),
         appBar: AppBar(
-          title: const Text('Home Page'),
-        ),
-        body: HomePage(),
-      ),
-    );
+          centerTitle: true, 
+          title: const Text('Bloom Buddy'),
+          backgroundColor: Colors.green,
+          ),
+          body: HomePage(),
+          )
+        );
   }
 }
 
@@ -54,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             title: const Padding(
               padding: EdgeInsets.only(top: 8.0),
               child: Text(
-                'Bloom Buddy',
+                'Plant Name',
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w900,
