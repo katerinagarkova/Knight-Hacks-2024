@@ -10,6 +10,8 @@ int pos2 = 0;
 int servoP1 = 2;
 int servoP2 = 13;
 
+int got = 0;
+
 //MOISTURE SENSOR
 int val = 0;
 const int soilPin = 27;
@@ -54,9 +56,20 @@ void loop() {
   Serial.print("Light Sensor = ");
   Serial.println(value);
 
+  while(Serial.available() > 0){
+    got = Serial.read();
+  }
+
   delay(1000); //takes a reading every second //just to test make it much less freq after
 
-  if((val < 3000) || 0){
+  //outputs temperature, then light value, then soil moisture
+  while(Serial.available() > 0){
+    Serial.write((int)temperature);
+    Serial.write(value);
+    Serial.write(readSoil());
+  }
+
+  if(got == 1){
     //SOIL LOOP
     for(pos1=45;pos1<=150;pos1+=1){
       servoL.write(pos1);
